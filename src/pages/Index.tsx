@@ -20,6 +20,7 @@ import labelLogo from "@/assets/label-logo.png";
 import labelCenter from "@/assets/label-center.png";
 import labelInfo from "@/assets/label-info.png";
 import labelPait from "@/assets/label-pait.png";
+import jarPackagingFull from "@/assets/jar-packaging-full.png";
 
 const Index = () => {
   return (
@@ -59,9 +60,12 @@ const Index = () => {
                 <span className="text-foreground">Tradition</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Experience the finest A2 Bilona Ghee, crafted using time-honored traditional methods. 
-                Pure, nutritious, and naturally golden ghee from grass-fed cows.
+                Experience the finest A2 Desi Cow Bilona Ghee, crafted using time-honored traditional methods. 
+                Made from A2 cow milk and natural yoghurt - 100% handmade with no chemicals.
               </p>
+              <div className="mb-6">
+                <p className="text-2xl font-bold text-golden">₹1,899/- <span className="text-sm text-muted-foreground font-normal">for 500ml (450g)</span></p>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button variant="hero" size="xl" className="animate-glow">
                   <Heart className="w-5 h-5 mr-2" />
@@ -85,9 +89,9 @@ const Index = () => {
             <div className="relative animate-float">
               <div className="absolute inset-0 bg-gradient-to-r from-golden/20 to-transparent rounded-2xl blur-3xl" />
               <img 
-                src={labelCenter} 
-                alt="Premium A2 Bilona Ghee jar on wooden table"
-                className="relative rounded-2xl shadow-2xl w-full h-auto object-cover bg-white p-8"
+                src={jarPackagingFull} 
+                alt="Ysho Amrut A2 Desi Cow Bilona Ghee - 500ml jar with complete packaging label"
+                className="relative rounded-2xl shadow-2xl w-full h-auto object-contain"
               />
             </div>
           </div>
@@ -112,33 +116,53 @@ const Index = () => {
             {[
               {
                 icon: <Heart className="w-8 h-8 text-golden" />,
-                title: "Heart Healthy",
-                description: "Rich in omega-3 fatty acids and conjugated linoleic acid (CLA) that support cardiovascular health"
+                title: "Boosts Brain Function",
+                description: "Enhances cognitive abilities and supports mental clarity"
               },
               {
-                icon: <Shield className="w-8 h-8 text-golden" />,
-                title: "Boosts Immunity",
-                description: "Contains antioxidants and vitamin A that strengthen your immune system naturally"
+                icon: <Heart className="w-8 h-8 text-golden" />,
+                title: "Supports Heart Health",
+                description: "Promotes cardiovascular wellness naturally"
               },
               {
                 icon: <Sparkles className="w-8 h-8 text-golden" />,
-                title: "Better Digestion",
-                description: "Easily digestible and helps improve gut health with beneficial fatty acids"
-              },
-              {
-                icon: <Leaf className="w-8 h-8 text-golden" />,
-                title: "100% Natural",
-                description: "Made from grass-fed A2 cows without any artificial additives or preservatives"
-              },
-              {
-                icon: <Droplets className="w-8 h-8 text-golden" />,
-                title: "Pure & Fresh",
-                description: "Traditional bilona method preserves all natural nutrients and authentic taste"
+                title: "Balances Hormones & Mind",
+                description: "Helps maintain hormonal equilibrium and mental balance"
               },
               {
                 icon: <Award className="w-8 h-8 text-golden" />,
-                title: "Premium Quality",
-                description: "Carefully crafted in small batches to ensure the highest quality standards"
+                title: "Excellent for Children & Elderly",
+                description: "Provides essential nutrition for all ages"
+              },
+              {
+                icon: <Shield className="w-8 h-8 text-golden" />,
+                title: "Strengthens Immunity",
+                description: "Fortifies your body's natural defense system"
+              },
+              {
+                icon: <Sparkles className="w-8 h-8 text-golden" />,
+                title: "Improves Digestion",
+                description: "Aids in better digestive health and metabolism"
+              },
+              {
+                icon: <Leaf className="w-8 h-8 text-golden" />,
+                title: "Enhances Skin Glow & Hair Strength",
+                description: "Nourishes skin and strengthens hair from within"
+              },
+              {
+                icon: <Sparkles className="w-8 h-8 text-golden" />,
+                title: "Boosts Metabolism & Weight Loss",
+                description: "Supports healthy weight management naturally"
+              },
+              {
+                icon: <Shield className="w-8 h-8 text-golden" />,
+                title: "Strengthens Bones & Joints",
+                description: "Promotes strong bones and flexible joints"
+              },
+              {
+                icon: <Droplets className="w-8 h-8 text-golden" />,
+                title: "Detoxifies & Heals Tissues",
+                description: "Natural detoxification and tissue healing properties"
               }
             ].map((benefit, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-golden/30">
@@ -221,10 +245,14 @@ const Index = () => {
                 1
               </div>
               <h3 className="text-2xl font-semibold mb-4">Pure A2 Milk</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Sourced from indigenous grass-fed cows that produce pure A2 protein milk, 
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Sourced from indigenous grass-fed desi cows that produce pure A2 protein milk, 
                 naturally rich in nutrients and easier to digest.
               </p>
+              <div className="bg-golden/10 border border-golden/20 rounded-lg p-4">
+                <p className="text-sm font-semibold text-golden mb-2">Ingredients:</p>
+                <p className="text-sm text-foreground">A2 Cow milk, Natural Yoghurt</p>
+              </div>
             </div>
 
             <div className="text-center group">
@@ -279,7 +307,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button variant="secondary" size="xl" className="bg-white text-golden hover:bg-cream">
               <Phone className="w-5 h-5 mr-2" />
-              Call to Order: +91 98765 43210
+              Call: +91 90492 99369
             </Button>
             <Button variant="outline" size="xl" className="border-white text-white hover:bg-white hover:text-golden">
               <Mail className="w-5 h-5 mr-2" />
@@ -305,7 +333,7 @@ const Index = () => {
                 <Phone className="w-12 h-12 text-golden mx-auto mb-4 group-hover:animate-float" />
                 <h3 className="text-xl font-semibold mb-2">Call Us</h3>
                 <p className="text-muted-foreground mb-4">Speak with our team</p>
-                <p className="font-semibold text-golden">+91 98765 43210</p>
+                <p className="font-semibold text-golden">+91 90492 99369</p>
               </CardContent>
             </Card>
 
@@ -314,7 +342,7 @@ const Index = () => {
                 <Mail className="w-12 h-12 text-golden mx-auto mb-4 group-hover:animate-float" />
                 <h3 className="text-xl font-semibold mb-2">Email Us</h3>
                 <p className="text-muted-foreground mb-4">Send us a message</p>
-                <p className="font-semibold text-golden">info@yshoamrut.com</p>
+                <p className="font-semibold text-golden">care@ysho.in</p>
               </CardContent>
             </Card>
 
@@ -323,7 +351,7 @@ const Index = () => {
                 <MapPin className="w-12 h-12 text-golden mx-auto mb-4 group-hover:animate-float" />
                 <h3 className="text-xl font-semibold mb-2">Visit Us</h3>
                 <p className="text-muted-foreground mb-4">Our dairy farm</p>
-                <p className="font-semibold text-golden">Maharashtra, India</p>
+                <p className="font-semibold text-golden text-sm">Bahula Go Dham Organics<br/>Sasvand, At. Punjave, Post - Dhundalwadi<br/>Tal - Dahanu, Dist - Palghar-401606</p>
               </CardContent>
             </Card>
           </div>
