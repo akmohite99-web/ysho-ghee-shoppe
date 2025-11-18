@@ -16,6 +16,10 @@ import {
 import heroGhee from "@/assets/hero-ghee.jpg";
 import a2Cow from "@/assets/a2-cow.jpg";
 import bilonaProcess from "@/assets/bilona-process.jpg";
+import labelLogo from "@/assets/label-logo.png";
+import labelCenter from "@/assets/label-center.png";
+import labelInfo from "@/assets/label-info.png";
+import labelPait from "@/assets/label-pait.png";
 
 const Index = () => {
   return (
@@ -24,7 +28,10 @@ const Index = () => {
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold text-golden">Ysho Amrut</h1>
+            <div className="flex items-center gap-2">
+              <img src={labelLogo} alt="Ysho Amrut Logo" className="h-12 w-auto" />
+              <h1 className="text-2xl font-bold text-golden">Ysho Amrut</h1>
+            </div>
             <div className="hidden md:flex items-center space-x-6">
               <a href="#home" className="text-foreground hover:text-golden transition-colors">Home</a>
               <a href="#benefits" className="text-foreground hover:text-golden transition-colors">Benefits</a>
@@ -78,9 +85,9 @@ const Index = () => {
             <div className="relative animate-float">
               <div className="absolute inset-0 bg-gradient-to-r from-golden/20 to-transparent rounded-2xl blur-3xl" />
               <img 
-                src={heroGhee} 
+                src={labelCenter} 
                 alt="Premium A2 Bilona Ghee jar on wooden table"
-                className="relative rounded-2xl shadow-2xl w-full h-auto object-cover"
+                className="relative rounded-2xl shadow-2xl w-full h-auto object-cover bg-white p-8"
               />
             </div>
           </div>
@@ -165,6 +172,30 @@ const Index = () => {
               We follow the ancient bilona churning process to create the purest, most nutritious ghee, 
               just as our ancestors did for centuries.
             </p>
+          </div>
+
+          {/* Product Label Showcase */}
+          <div className="mb-16 max-w-4xl mx-auto">
+            <Card className="overflow-hidden bg-card shadow-2xl border-golden/20">
+              <CardContent className="p-8">
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                  <div className="bg-white p-4 rounded-lg">
+                    <img 
+                      src={labelPait} 
+                      alt="Ysho Amrut Product Label"
+                      className="w-full h-auto rounded-lg"
+                    />
+                  </div>
+                  <div className="bg-white p-4 rounded-lg">
+                    <img 
+                      src={labelInfo} 
+                      alt="Product Information and Nutritional Details"
+                      className="w-full h-auto rounded-lg"
+                    />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-12">
