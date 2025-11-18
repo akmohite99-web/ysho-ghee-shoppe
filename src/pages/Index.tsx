@@ -174,24 +174,33 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Product Label Showcase */}
-          <div className="mb-16 max-w-4xl mx-auto">
+          {/* Product Packaging Details */}
+          <div className="mb-16 max-w-5xl mx-auto">
             <Card className="overflow-hidden bg-card shadow-2xl border-golden/20">
               <CardContent className="p-8">
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                  <div className="bg-white p-4 rounded-lg">
-                    <img 
-                      src={labelPait} 
-                      alt="Ysho Amrut Product Label"
-                      className="w-full h-auto rounded-lg"
-                    />
+                <h3 className="text-2xl font-semibold text-center mb-8 text-golden">Our Premium Packaging</h3>
+                <div className="grid md:grid-cols-2 gap-12 items-start">
+                  <div className="text-center">
+                    <div className="bg-white p-6 rounded-lg shadow-lg mb-4">
+                      <img 
+                        src={labelPait} 
+                        alt="Jar Packaging Label - wraps around the ghee jar"
+                        className="w-full h-auto rounded-lg"
+                      />
+                    </div>
+                    <p className="text-sm font-medium text-muted-foreground">Jar Packaging Label</p>
+                    <p className="text-xs text-muted-foreground mt-1">Wraps around the jar</p>
                   </div>
-                  <div className="bg-white p-4 rounded-lg">
-                    <img 
-                      src={labelInfo} 
-                      alt="Product Information and Nutritional Details"
-                      className="w-full h-auto rounded-lg"
-                    />
+                  <div className="text-center">
+                    <div className="bg-white p-6 rounded-lg shadow-lg mb-4">
+                      <img 
+                        src={labelInfo} 
+                        alt="Cap Sticker - nutritional information and product details"
+                        className="w-full h-auto rounded-lg"
+                      />
+                    </div>
+                    <p className="text-sm font-medium text-muted-foreground">Jar Cap Sticker</p>
+                    <p className="text-xs text-muted-foreground mt-1">Nutritional information & details</p>
                   </div>
                 </div>
               </CardContent>
