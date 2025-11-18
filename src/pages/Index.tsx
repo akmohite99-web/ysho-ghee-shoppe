@@ -198,39 +198,6 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Product Packaging Details */}
-          <div className="mb-16 max-w-5xl mx-auto">
-            <Card className="overflow-hidden bg-card shadow-2xl border-golden/20">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold text-center mb-8 text-golden">Our Premium Packaging</h3>
-                <div className="grid md:grid-cols-2 gap-12 items-start">
-                  <div className="text-center">
-                    <div className="bg-white p-6 rounded-lg shadow-lg mb-4">
-                      <img 
-                        src={labelPait} 
-                        alt="Jar Packaging Label - wraps around the ghee jar"
-                        className="w-full h-auto rounded-lg"
-                      />
-                    </div>
-                    <p className="text-sm font-medium text-muted-foreground">Jar Packaging Label</p>
-                    <p className="text-xs text-muted-foreground mt-1">Wraps around the jar</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="bg-white p-6 rounded-lg shadow-lg mb-4">
-                      <img 
-                        src={labelInfo} 
-                        alt="Cap Sticker - nutritional information and product details"
-                        className="w-full h-auto rounded-lg"
-                      />
-                    </div>
-                    <p className="text-sm font-medium text-muted-foreground">Jar Cap Sticker</p>
-                    <p className="text-xs text-muted-foreground mt-1">Nutritional information & details</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="text-center group">
               <div className="relative mb-8 overflow-hidden rounded-2xl">
