@@ -20,7 +20,7 @@ import yshoLogo from "@/assets/ysho-logo.jpeg";
 import labelCenter from "@/assets/label-center.png";
 import labelInfo from "@/assets/label-info.png";
 import labelPait from "@/assets/label-pait.png";
-import yshoPackaging from "@/assets/ysho-packaging.jpeg";
+import yshoPackaging from "@/assets/ysho-packaging-nobg.png";
 
 const Index = () => {
   return (
