@@ -16,7 +16,7 @@ import {
 import heroGhee from "@/assets/hero-ghee.jpg";
 import a2Cow from "@/assets/a2-cow.jpg";
 import bilonaProcess from "@/assets/bilona-process.jpg";
-import labelLogo from "@/assets/label-logo.png";
+import yshoLogo from "@/assets/ysho-logo.jpeg";
 import labelCenter from "@/assets/label-center.png";
 import labelInfo from "@/assets/label-info.png";
 import labelPait from "@/assets/label-pait.png";
@@ -30,7 +30,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <img src={labelLogo} alt="Ysho Amrut Logo" className="h-12 w-auto" />
+              <img src={yshoLogo} alt="Ysho Amrut Logo" className="h-12 w-auto rounded-full" />
               <h1 className="text-2xl font-bold text-golden">Ysho Amrut</h1>
             </div>
             <div className="hidden md:flex items-center space-x-6">
