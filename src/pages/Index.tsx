@@ -20,7 +20,7 @@ import yshoLogo from "@/assets/ysho-logo.jpeg";
 import labelCenter from "@/assets/label-center.png";
 import labelInfo from "@/assets/label-info.png";
 import labelPait from "@/assets/label-pait.png";
-import jarPackagingFull from "@/assets/jar-packaging-full.png";
+import yshoPackaging from "@/assets/ysho-packaging.jpeg";
 
 const Index = () => {
   return (
@@ -89,8 +89,8 @@ const Index = () => {
             <div className="relative animate-float">
               <div className="absolute inset-0 bg-gradient-to-r from-golden/20 to-transparent rounded-2xl blur-3xl" />
               <img 
-                src={jarPackagingFull} 
-                alt="Ysho Amrut A2 Desi Cow Bilona Ghee - 500ml jar with complete packaging label"
+                src={yshoPackaging} 
+                alt="Ysho Amrut A2 Desi Cow Bilona Ghee - Product box and jar packaging"
                 className="relative rounded-2xl shadow-2xl w-full h-auto object-contain"
               />
             </div>
