@@ -39,6 +39,7 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Premium ghee color palette */
+    --ysho-green: 142 45% 38%;
     --golden: 45 95% 65%;
     --golden-light: 48 90% 75%;
     --golden-dark: 40 85% 45%;

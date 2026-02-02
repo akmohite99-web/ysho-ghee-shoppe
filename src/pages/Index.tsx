@@ -20,7 +20,7 @@ import yshoLogo from "@/assets/ysho-logo.jpeg";
 import labelCenter from "@/assets/label-center.png";
 import labelInfo from "@/assets/label-info.png";
 import labelPait from "@/assets/label-pait.png";
-import yshoPackaging from "@/assets/ysho-packaging-nobg.png";
+import yshoPackaging from "@/assets/ysho-packaging-hero.png";
 
 const Index = () => {
   return (
@@ -30,8 +30,8 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <img src={yshoLogo} alt="Ysho Amrut Logo" className="h-12 w-auto rounded-full" />
-              <h1 className="text-2xl font-bold text-golden">Ysho Amrut</h1>
+              <img src={yshoLogo} alt="Ysho Essence of Nature Logo" className="h-12 w-auto rounded-full" />
+              <h1 className="text-2xl font-bold text-golden">Ysho Essence of Nature</h1>
             </div>
             <div className="hidden md:flex items-center space-x-6">
               <a href="#home" className="text-foreground hover:text-golden transition-colors">Home</a>
@@ -47,18 +47,21 @@ const Index = () => {
       {/* Hero Section */}
       <section id="home" className="relative overflow-hidden bg-gradient-to-br from-cream via-background to-golden/10">
         <div className="container mx-auto px-4 py-24">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-16 items-center">
             <div className="animate-fade-in">
               <Badge variant="secondary" className="mb-6 bg-golden/10 text-golden border-golden/20">
                 <Sparkles className="w-4 h-4 mr-2" />
                 Premium A2 Bilona Ghee
               </Badge>
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold mb-2 leading-tight">
+                <span className="text-ysho-green">Ysho</span>{" "}
+                <span className="text-golden">Amrut</span>
+              </h1>
+              <p className="text-xl lg:text-2xl font-medium text-muted-foreground mb-6">
                 <span className="text-foreground">Pure </span>
                 <span className="text-golden">Golden</span>
-                <br />
-                <span className="text-foreground">Tradition</span>
-              </h1>
+                <span className="text-foreground"> Tradition</span>
+              </p>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                 Experience the finest A2 Desi Cow Bilona Ghee, crafted using time-honored traditional methods. 
                 Made from A2 cow milk and natural yoghurt - 100% handmade with no chemicals.
@@ -86,13 +89,15 @@ const Index = () => {
                 <p className="text-sm text-muted-foreground">100% Natural & Pure</p>
               </div>
             </div>
-            <div className="relative animate-float">
+            <div className="relative animate-float flex justify-center lg:justify-end min-h-[320px] lg:min-h-[420px]">
               <div className="absolute inset-0 bg-gradient-to-r from-golden/20 to-transparent rounded-2xl blur-3xl" />
-              <img 
-                src={yshoPackaging} 
-                alt="Ysho Amrut A2 Desi Cow Bilona Ghee - Product box and jar packaging"
-                className="relative rounded-2xl shadow-2xl w-full h-auto object-contain"
-              />
+              <div className="relative rounded-2xl shadow-2xl overflow-hidden bg-gradient-to-br from-cream via-background to-golden/10 w-full max-w-xl lg:max-w-2xl xl:max-w-3xl scale-[0.8] origin-center">
+                <img 
+                  src={yshoPackaging} 
+                  alt="Ysho Amrut A2 Desi Cow Bilona Ghee - Product box and jar packaging"
+                  className="relative rounded-2xl w-full h-auto object-contain mix-blend-darken"
+                />
+              </div>
             </div>
           </div>
         </div>

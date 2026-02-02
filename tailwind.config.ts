@@ -53,6 +53,7 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				// Premium ghee palette
+				'ysho-green': 'hsl(var(--ysho-green))',
 				golden: {
 					DEFAULT: 'hsl(var(--golden))',
 					light: 'hsl(var(--golden-light))',
