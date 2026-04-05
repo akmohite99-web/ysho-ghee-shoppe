@@ -94,7 +94,7 @@ const Index = () => {
               <div className="relative rounded-2xl shadow-2xl overflow-hidden bg-gradient-to-br from-cream via-background to-golden/10 w-full max-w-xl lg:max-w-2xl xl:max-w-3xl scale-[0.8] origin-center">
                 <img 
                   src={yshoPackaging} 
-                  alt="Ysho Amrut A2 Desi Cow Bilona Ghee - Product box and jar packaging"
+                  alt="Ysho A2 Desi Cow Bilona Ghee - Product box and jar packaging"
                   className="relative rounded-2xl w-full h-auto object-contain mix-blend-darken"
                 />
               </div>
@@ -334,13 +334,13 @@ const Index = () => {
       <footer className="py-12 bg-warm-brown text-cream">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <h3 className="text-2xl font-bold text-golden mb-4">Ysho Amrut</h3>
+            <h3 className="text-2xl font-bold text-golden mb-4">Ysho A2 Desi Cow Bilona Ghee</h3>
             <p className="text-cream/80 mb-6 max-w-2xl mx-auto">
               Preserving traditional dairy wisdom while delivering the purest A2 Bilona Ghee 
               to your doorstep. Experience the taste of authentic heritage.
             </p>
             <div className="flex justify-center items-center gap-4 text-sm text-cream/60">
-              <p>&copy; 2024 Ysho Amrut. All rights reserved.</p>
+              <p>&copy; 2024 Ysho A2 Desi Cow Bilona Ghee. All rights reserved.</p>
               <div className="h-4 w-px bg-cream/30" />
               <p>Made with ❤️ for pure tradition</p>
             </div>
