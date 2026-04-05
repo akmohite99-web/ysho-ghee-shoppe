@@ -55,7 +55,7 @@ const Index = () => {
               </Badge>
               <h1 className="text-5xl lg:text-6xl font-bold mb-2 leading-tight">
                 <span className="text-ysho-green">Ysho</span>{" "}
-                <span className="text-golden">Amrut</span>
+                <span className="text-golden">A2 Desi Cow Bilona Ghee</span>
               </h1>
               <p className="text-xl lg:text-2xl font-medium text-muted-foreground mb-6">
                 <span className="text-foreground">Pure </span>
